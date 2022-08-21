@@ -1,8 +1,7 @@
 name: zerom
 description: A new Flutter package project.
 version: 0.0.1
-author: Berke Aytas
-homepage:
+homepage: https://github.com/BerkeAytas/zerom
 
 environment:
   sdk: ">=2.17.6 <3.0.0"
