@@ -39,6 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(
         children: [
           Container(
+            padding: context.paddinglow,
             width: context.dynamicWidth(0.1),
             height: context.dynamicHeight(0.1),
             color: Colors.amber,
