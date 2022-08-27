@@ -23,6 +23,7 @@ extension PaddingExtansion on BuildContext {
   EdgeInsets get paddinglow => EdgeInsets.all(xsmall);
   EdgeInsets get paddingMedium => EdgeInsets.all(small);
   EdgeInsets get paddingHard => EdgeInsets.all(medium);
+  EdgeInsets get paddingHarder => EdgeInsets.all(large);
 
 // Horizontal
   EdgeInsets get paddingHorizontalLow =>
