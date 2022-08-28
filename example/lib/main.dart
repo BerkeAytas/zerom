@@ -1,3 +1,4 @@
+import 'package:example/route.dart';
 import 'package:flutter/material.dart';
 import 'package:zerom/zerom.dart';
 
@@ -11,7 +12,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'Zerom',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -38,6 +40,12 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Column(
         children: [
+          TextButton(
+            onPressed: () {
+              context.next(const RouteExample());
+            },
+            child: const Text("Zerom"),
+          ),
           Container(
             padding: context.paddinglow,
             width: context.dynamicWidth(0.1),

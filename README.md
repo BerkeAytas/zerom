@@ -56,5 +56,32 @@ It can enable you to write better code using the power of context. <br>
     );
   }
 ```
+## Navigation Extension
+It can enable you to write better code using the power of context. Can work with all kinds of buttons <br>
 
+context.next(const RouteExample()); <br>
+context.back();
+
+```dart
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Column(
+        children: [
+          TextButton(
+            onPressed: () {
+              context.next(const RouteExample());
+            },
+            child: const Text("Next Page"),
+          ),
+          TextButton(
+            onPressed: () {
+              context.back();
+            },
+            child: const Text("Zerom"),
+          ),
+        ],
+      ),
+  }
+```
 
